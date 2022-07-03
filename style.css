@@ -1,0 +1,456 @@
+*{
+    margin: ;
+    padding: ;
+    font-family: sans-serif;
+
+}
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: cornflowerblue;
+}
+.logo a{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+.home{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+.home h1{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+span{
+    color:crimson;
+}
+.home p{
+    color: #555;
+    line-height: 22px;
+}
+.home a{
+    background: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 8px;
+} 
+.container{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+.container img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.container:hover .shape{
+    bottom: 40px;
+}
+.container:hover .boy{
+    left: 45%
+}
+ /*home section styling*/
+ .home{
+    display: flex;
+    background: url("/portfolio/pexels-filippo-bergamaschi-986774.jpg") no-repeat center;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+}
+.home .container{
+    margin: auto 0 auto 40px;
+
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+ .home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 12px 36px;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 10px solid crimson;
+    border-radius: 6px;
+    transition: all 0.04s ease;
+} 
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+/*about*/
+
+.title{
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+
+.about{
+  background: linear-gradient(45deg,#ff006f,#00ccff);
+  margin-top: 0;
+  display: block;
+  padding: 80px;
+
+}
+
+.about .about-content{
+
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+} 
+.about .about-content .left{
+object-fit: cover;
+
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    
+}
+.about .about-content .left{
+width: 45%;
+}
+.about .about-content .right{
+width: 55%;
+}
+.about .about-content .right .text{
+font-size: 25px;
+font-weight: 600;
+margin: 0;
+}
+.about .about-content .right .text span{
+color: crimson;
+font-size: larger;
+}
+  /*protfolio*/
+  .title{
+    padding: 100px 0;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+#protfolio{
+margin: 34px;
+display: flex;
+}
+#protfolio .box{ 
+border: 2px solid white;
+padding: 34px;
+margin: 2px 55px;
+border-radius: 28px;
+background: #f2f2f2;
+margin-bottom: 20px;
+box-shadow: 3px 3px 20px lightblue;
+}
+
+#protfolio .box img{ 
+height: 300px;
+margin: auto;
+display: block;
+}
+
+
+#protfolio .box p{
+font-family: 'Bree Serif', serif;
+
+} 
+/*education*/
+.title-2{
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#Education{
+margin-top: 20px;
+display: block;
+padding: 80px;
+background: linear-gradient(45deg,#ff006f,#00ccff);
+}
+h5{
+font-size: 20px;
+}
+/*skills*/
+#skills{
+    /* background: linear-gradient(45deg,#ff006f,#00ccff); */
+    box-shadow: 3px 3px 20px lightblue;
+}
+.skill{
+    width: 500px;
+    background: #fff;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 2 20px 25px rgba(191, 31, 31, 0.2); */
+}
+@keyframes load {
+    from{
+        width: 0%;
+    }
+}
+@-webkit-keyframes load{
+    from{
+        width: 0%;
+    }
+}
+@-moz-keyframes load {
+    from{
+        width: 0%;
+    }
+}
+@-o-keyframes load{
+    from{
+        width: 0%;
+    }
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.box{
+    /* list-style: none;
+    margin: 0;
+    padding: 0; */
+    border: 2px solid white;
+    padding: 34px;
+    margin: 2px 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 20px lightblue;
+}
+.box li h5{
+    margin-bottom: 10px;
+}
+.bar{
+    height: 20px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+.bar::before{
+    content: "";
+    background-color: #ae00ff;
+    display: inline-block;
+    padding: 8px;
+    animation: load 4s 0s;
+    -webkit-animation: load 3s 0s;
+    -moz-animation: load 3s 0s;
+    -o-animation: load 3s 0s;
+
+}
+.bar.bar1::before{
+    width: calc(95% - 10px);
+}
+.bar.bar2::before{
+    width: calc(70% - 10px);
+}
+.bar.bar3::before{
+    width: calc(60% - 10px);
+}
+.bar.bar4::before{
+    width: calc(40% - 10px);
+}
+/*GALLARY*/
+.title-3{
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.picture{
+text-align: center;
+}
+#Gallery{
+/* background: linear-gradient(45deg,#ff006f,#00ccff); */
+margin: 35px;
+display: inline-flex;
+}
+
+#Gallery .box{ 
+border: 2px solid white;
+padding: 0;
+margin: 2px 25px;
+border-radius: 0;
+background: #fff;
+margin-bottom: 20px;
+box-shadow: 3px 3px 20px lightblue;
+}
+
+#Gallery .box img{ 
+height: 250px;
+margin: 10px;
+width: 200px;
+display: block;
+}
+/*contact*/
+.title-4{
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#contact{
+margin-top: 0px;
+display: block;
+padding: 0px;
+position: relative;
+ background-color:rgb(34, 21, 21); 
+/* background: linear-gradient(45deg,#ff006f,#00ccff); */
+color: black;
+
+}
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 9px;
+font-size: 1.1rem;
+} 
+
+#contact-box form{
+width: 40%;
+}
+
+#contact-box label{
+font-size: 1.3rem;
+font-family: 'Bree Serif', serif;
+
+}
+.btn{
+    /* background-color: rgb(175, 43, 43);
+    padding: 10px;
+    border: 4px solid black;
+    cursor: pointer;
+    font-size: 20px;
+   border-radius: 10px;
+    margin: 10px;
+    color: #fff;
+    transition: all 0.04s ease; */
+
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    padding: 12px 36px;
+    font-size: 25px;
+    margin-top: 20px;
+    border: 10px solid crimson;
+    border-radius: 6px;
+    transition: all 0.04s ease;
+}
+a:hover{ 
+    /* background-color: crimson; */
+        color: crimson;
+        background: none;
+    }
+  
